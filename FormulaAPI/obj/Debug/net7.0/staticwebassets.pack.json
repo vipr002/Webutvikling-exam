@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/Kristine.jpg",
+      "PackagePath": "staticwebassets/images/Kristine.jpg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/Thomas.jpg",
+      "PackagePath": "staticwebassets/images/Thomas.jpg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/emmanueldesperados.jpg",
+      "PackagePath": "staticwebassets/images/emmanueldesperados.jpg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/iltempogigante.jpg",
+      "PackagePath": "staticwebassets/images/iltempogigante.jpg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/reodorfelgen.jpeg",
+      "PackagePath": "staticwebassets/images/reodorfelgen.jpeg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/rudolphblodstrup.jpg",
+      "PackagePath": "staticwebassets/images/rudolphblodstrup.jpg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/snakeoil.jpg",
+      "PackagePath": "staticwebassets/images/snakeoil.jpg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/solangundersen.jpg",
+      "PackagePath": "staticwebassets/images/solangundersen.jpg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/images/yaris.jpg",
+      "PackagePath": "staticwebassets/images/yaris.jpg"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/wwwroot/styles.css",
+      "PackagePath": "staticwebassets/styles.css"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.FormulaAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.FormulaAPI.props",
+      "PackagePath": "build\\FormulaAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.FormulaAPI.props",
+      "PackagePath": "buildMultiTargeting\\FormulaAPI.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.FormulaAPI.props",
+      "PackagePath": "buildTransitive\\FormulaAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

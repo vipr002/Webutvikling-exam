@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Dokumentasjon på F1 API</h2>
+    </header>
+    <main>
+      <div class="container">
+        <section>
+          <article>
+            <h2>Indroduksjon</h2>
+            <p>
+              På denne siden så skal vi vise hvordan du kan bruke vårt F1 API.
+              All data du får tilbake er JASON.
+            </p>
+
+            <p>Vi har tre hoved endepunkter:</p>
+            <ul>
+              <li>http:localhost/xxxx/api/driver</li>
+              <li>http:localhost/xxxx/api/race</li>
+              <li>http:localhost/xxxx/api/team</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Drivers</h3>
+            <br />
+            <h4>Karakter skjema</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">key</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ID</td>
+                  <td>Int</td>
+                  <td>ID på driver</td>
+                </tr>
+                <tr>
+                  <td>Name</td>
+                  <td>String</td>
+                  <td>Navnet på Driver</td>
+                </tr>
+                <tr>
+                  <td>Age</td>
+                  <td>Int</td>
+                  <td>Alder på Driver</td>
+                </tr>
+                <tr>
+                  <td>Nationality</td>
+                  <td>String</td>
+                  <td>Hvilke land Driver er fra.</td>
+                </tr>
+                <tr>
+                  <td>Image</td>
+                  <td>String</td>
+                  <td>Bilde av Driver</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Hent alle:</h4>
+            <p>
+              URL for å hente alle sjåfjører er:
+              <strong>http://localhost:xxxx/api/driver</strong>
+            </p>
+
+            <p class="json">
+              {"id":32, <br />"name":"Rudolph Blodstrupmoen", <br />
+              "age":43, <br />
+              "nationality":"Norsk", <br />
+              "image":"rudolphblodstrup.jpg"}
+            </p>
+
+            <h4>Hent en sjåfør etter id:</h4>
+            <p>
+              Du kan få tak i en sjåfjør ved å legge til id på enden av linken
+              som:
+              <strong>http://localhost:xxxx/api/driver/1</strong>
+            </p>
+          </article>
+          <article>
+            <h3>Teams</h3>
+            <h4>Karakter skjema</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">key</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ID</td>
+                  <td>Int</td>
+                  <td>ID på team</td>
+                </tr>
+                <tr>
+                  <td>Manufacturer</td>
+                  <td>String</td>
+                  <td>Merke på bilen</td>
+                </tr>
+                <tr>
+                  <td>Driver1</td>
+                  <td>String</td>
+                  <td>Navnet på Driver1</td>
+                </tr>
+                <tr>
+                  <td>Driver2</td>
+                  <td>String</td>
+                  <td>Navnet på driver2</td>
+                </tr>
+                <tr>
+                  <td>Image</td>
+                  <td>String</td>
+                  <td>Bilde av bilen</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Hent alle:</h4>
+            <p>
+              URL for å hente alle teams er:
+              <strong>http://localhost:xxxx/api/team</strong>
+            </p>
+
+            <p class="json">
+              {"id":7, <br />
+              "manufacturer":"Felgen AS", <br />
+              "image":"iltempogigante.jpg", <br />
+              "driver1":"Reodor Felgen", <br />
+              "driver2":"Solan Gundersen"} <br />
+            </p>
+            <h4>Hent et team etter id:</h4>
+            <p>
+              Du kan få tak i et team ved å legge til id på enden av linken som:
+              <strong> http://localhost:5132/api/team/1 </strong>
+            </p>
+          </article>
+          <article class="col-12">
+            <h3>Races</h3>
+            <h4>Karakter skjema</h4>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">key</th>
+                  <th scope="col">Type</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ID</td>
+                  <td>Int</td>
+                  <td>ID på team</td>
+                </tr>
+                <tr>
+                  <td>WinnerName</td>
+                  <td>String</td>
+                  <td>Navnet på vinneren</td>
+                </tr>
+                <tr>
+                  <td>WinnerTime</td>
+                  <td>double</td>
+                  <td>Tiden til vinneren</td>
+                </tr>
+                <tr>
+                  <td>GrandPrix</td>
+                  <td>String</td>
+                  <td>Navnet på landet de kjørte</td>
+                </tr>
+                <tr>
+                  <td>NumberOfLaps</td>
+                  <td>int</td>
+                  <td>nummeret av runder de kjørte</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>Hent alle:</h4>
+            <p>
+              URL for å hente alle races er:
+              <strong> http://localhost:5132/api/race</strong>
+            </p>
+            <p class="json">
+              {"id":7, <br />
+              "winnerName":"Reodor Felgen", <br />
+              "winnerTime":92.68, <br />
+              "grandPrix":"Zandvoort", <br />
+              "numberOfLaps":45}
+            </p>
+
+            <h4>Hent et race etter id:</h4>
+            <p>
+              Du kan få tak i et race ved å legge til id på enden av linken som:
+              <strong>http://localhost:5132/api/race/1</strong>
+            </p>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,308 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+}
+
+:root {
+  /* den egentlige formula rødfargen er: #ff1901
+     måtte gjøres litt mørkere for å oppnå minimumskrav
+     for universell utforming (kontrast) */
+  --formulaRed: #ec0000;
+}
+main {
+  height: 100vh;
+}
+header {
+  height: 6rem;
+  background: var(--formulaRed);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 100%;
+}
+.tezt {
+  text-transform: capitalize;
+}
+.navHeader {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 70%;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.navItem {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  font-size: 1.2rem;
+  transition: color 250ms ease-in-out;
+}
+.navItem:hover {
+  color: black;
+}
+.logoImg {
+  height: 80%;
+}
+.homePageContainer {
+  background-image: url("assets/BAP.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newForm {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  height: 40%;
+  padding: 2rem;
+}
+
+.infoBox {
+  background: white;
+  width: 30%;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.mainHeading {
+  left: 34%;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.BAP {
+  width: 100%;
+  height: 100%;
+}
+
+.btnComponent {
+  background: var(--formulaRed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem;
+  transition: transform 150ms ease-in-out;
+}
+
+.btnComponent:hover {
+  transform: scale(1.1);
+}
+
+img {
+  height: 150px;
+}
+
+.output {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8rem;
+  padding-left: 0;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  min-height: 15rem;
+  position: relative;
+  border-radius: 5%;
+  box-shadow: 2px 2px 8px rgba(34, 34, 34, 0.6);
+}
+
+.card img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transition: all 350ms ease-in-out;
+  z-index: 1;
+  transform: scale(1.1);
+}
+.card p {
+  position: absolute;
+  z-index: 2;
+  left: -10rem;
+  top: 3rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  transition: all 350ms ease-in-out;
+  opacity: 0;
+}
+.card .cardP1 {
+  top: 4rem;
+}
+.card .cardP2 {
+  top: 5rem;
+}
+.card h3 {
+  position: absolute;
+  top: -2.5rem;
+  left: 0.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  transition: all 350ms ease-in-out;
+  z-index: 2;
+}
+.actionContainer {
+  position: absolute;
+  z-index: 100;
+  bottom: -3rem;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  transition: all 350ms ease-in-out;
+}
+
+.card:hover .actionContainer {
+  bottom: 0;
+}
+.card:hover h3 {
+  top: 0.5rem;
+}
+.card:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+.card:hover p {
+  left: 0.5rem;
+  opacity: 1;
+}
+
+.btn-outline-danger {
+  background-color: var(--formulaRed);
+  color: var(--formulaRed);
+}
+
+.newForm {
+  display: flex;
+  flex-direction: column;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+}
+.editForm {
+  display: flex;
+  flex-direction: column;
+}
+.editForm * {
+  width: 25rem;
+  min-height: 3rem;
+  margin: 2px;
+}
+.guessGameContainer {
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.guessGameContainer img {
+  height: 40%;
+  width: 25%;
+  object-fit: cover;
+}
+.guessGameContainer input {
+  max-width: 25%;
+}
+.guessGameContainer button {
+  max-width: 25%;
+}
+.guessGameContainer > * {
+  margin: 0.5rem;
+}
+.guessGameContainer h5 {
+  font-weight: bold;
+}
+.searchContainer {
+  position: absolute;
+  right: 0;
+}
+
+.delBtn {
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  color: black;
+  border: none;
+  box-shadow: 1px 1px 3px rgba(34, 34, 34, 0.6);
+  transition: all 150ms ease-in-out;
+}
+.delBtn:hover {
+  background: var(--formulaRed);
+  color: white;
+}
+
+.showMenu {
+  display: flex;
+}
+.hideMenu {
+  display: flex;
+}
+.hamburgerIcon {
+  z-index: 1000;
+  cursor: pointer;
+  transition: transform 150ms ease-in-out;
+  display: none;
+}
+.hamburgerIcon:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 767px) {
+  /* Stiler for hamburgermenyen på små skjermstørrelser */
+  .navHeader {
+    background: var(--formulaRed);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    z-index: 120;
+    flex-direction: column;
+    height: 30rem;
+    align-items: start;
+    border-radius: 0 0 0 2rem;
+  }
+  .hamburgerIcon {
+    display: block;
+  }
+  .hideMenu {
+    display: none;
+  }
+  /* Stiler for å vise statisk informasjon på kortene. istedet for hover*/
+  .card .actionContainer {
+    bottom: 0;
+  }
+  .card h3 {
+    top: 0.5rem;
+  }
+  .card img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+  }
+  .card p {
+    left: 0.5rem;
+    opacity: 1;
+  }
+  /* Gjør knappene større for å enklere kunne klikke på liten skjerm*/
+  .actionBtn {
+    height: 3rem;
+    width: 6rem;
+  }
+}

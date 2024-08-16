@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+  font-family: Roboto;
+  margin: 0;
+}
+header {
+  height: 3rem;
+  color: white;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: red;
+}
+h3 {
+  font-weight: bold;
+}
+
+.json {
+  font-size: 20px;
+  background: black;
+  color: white;
+}
