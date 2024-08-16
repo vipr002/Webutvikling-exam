@@ -1723,19 +1723,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/leon/.nuget/packages/": {}
+    "/Users/victoriaprigel/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/FormulaAPI.csproj",
+      "projectUniqueName": "/Users/victoriaprigel/Desktop/Eksamen/webutviklingExam23/FormulaAPI/FormulaAPI.csproj",
       "projectName": "FormulaAPI",
-      "projectPath": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/FormulaAPI.csproj",
-      "packagesPath": "/Users/leon/.nuget/packages/",
-      "outputPath": "/Users/leon/Documents/code/Webutvikling Eksamen/FormulaAPI/obj/",
+      "projectPath": "/Users/victoriaprigel/Desktop/Eksamen/webutviklingExam23/FormulaAPI/FormulaAPI.csproj",
+      "packagesPath": "/Users/victoriaprigel/.nuget/packages/",
+      "outputPath": "/Users/victoriaprigel/Desktop/Eksamen/webutviklingExam23/FormulaAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/leon/.nuget/NuGet/NuGet.Config"
+        "/Users/victoriaprigel/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
